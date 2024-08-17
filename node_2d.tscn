@@ -2,15 +2,16 @@
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_dpxu0"]
 [ext_resource type="Texture2D" uid="uid://d4lj86qbycg8a" path="res://icon.svg" id="2_6ywuj"]
+[ext_resource type="PackedScene" uid="uid://chshqlahe5ojg" path="res://note.tscn" id="3_flsnc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ybyr"]
-size = Vector2(48, 128)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jli0o"]
-size = Vector2(64, 20)
+size = Vector2(48, 512)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_dpxu0")
+track = "res://Köppen As Fuck - Chris Christodoulou.mp3"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -20,6 +21,7 @@ scale = Vector2(1, 0.125)
 
 [node name="Area2D" type="Area2D" parent="Keys"]
 position = Vector2(-192, -23.92)
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Keys/Area2D"]
 shape = SubResource("RectangleShape2D_4ybyr")
@@ -29,6 +31,7 @@ texture = ExtResource("2_6ywuj")
 
 [node name="Area2D2" type="Area2D" parent="Keys"]
 position = Vector2(-64, -23.92)
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Keys/Area2D2"]
 shape = SubResource("RectangleShape2D_4ybyr")
@@ -38,6 +41,7 @@ texture = ExtResource("2_6ywuj")
 
 [node name="Area2D3" type="Area2D" parent="Keys"]
 position = Vector2(64, -23.92)
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Keys/Area2D3"]
 shape = SubResource("RectangleShape2D_4ybyr")
@@ -47,6 +51,7 @@ texture = ExtResource("2_6ywuj")
 
 [node name="Area2D4" type="Area2D" parent="Keys"]
 position = Vector2(192, -23.92)
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Keys/Area2D4"]
 shape = SubResource("RectangleShape2D_4ybyr")
@@ -56,38 +61,26 @@ texture = ExtResource("2_6ywuj")
 
 [node name="Notes" type="Node2D" parent="."]
 
-[node name="Node2D2" type="Node2D" parent="Notes"]
+[node name="Note" parent="Notes" instance=ExtResource("3_flsnc")]
 position = Vector2(-192, 0)
 
-[node name="Note" type="Area2D" parent="Notes/Node2D2"]
-monitoring = false
+[node name="Note2" parent="Notes" instance=ExtResource("3_flsnc")]
+position = Vector2(-192, -192)
 
-[node name="Sprite2D5" type="Sprite2D" parent="Notes/Node2D2/Note"]
-scale = Vector2(1, 0.125)
-texture = ExtResource("2_6ywuj")
+[node name="Note3" parent="Notes" instance=ExtResource("3_flsnc")]
+position = Vector2(64, -256)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Notes/Node2D2/Note"]
-shape = SubResource("RectangleShape2D_jli0o")
+[node name="Note4" parent="Notes" instance=ExtResource("3_flsnc")]
+position = Vector2(192, -512)
 
-[node name="Note2" type="Area2D" parent="Notes/Node2D2"]
-position = Vector2(0, -216)
-monitoring = false
+[node name="Note6" parent="Notes" instance=ExtResource("3_flsnc")]
+position = Vector2(64, -640)
 
-[node name="Sprite2D5" type="Sprite2D" parent="Notes/Node2D2/Note2"]
-scale = Vector2(1, 0.125)
-texture = ExtResource("2_6ywuj")
+[node name="Note7" parent="Notes" instance=ExtResource("3_flsnc")]
+position = Vector2(64, -896)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Notes/Node2D2/Note2"]
-shape = SubResource("RectangleShape2D_jli0o")
-
-[node name="Node2D3" type="Node2D" parent="Notes"]
-position = Vector2(-64, 0)
-
-[node name="Node2D4" type="Node2D" parent="Notes"]
-position = Vector2(64, 0)
-
-[node name="Node2D5" type="Node2D" parent="Notes"]
-position = Vector2(192, 0)
+[node name="Note5" parent="Notes" instance=ExtResource("3_flsnc")]
+position = Vector2(-64, -416)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
