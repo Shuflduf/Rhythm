@@ -2,19 +2,20 @@ extends Node2D
 
 signal noted(points: float)
 
+@export var offset = 0.0
+
 @export_global_file var track: String
 
 
 var inputs = ["one", "two", "three", "four"]
 @onready var keys: Node2D = $Keys
-@onready var notes: Node2D = $Notes
+#@onready var notes: Node2D = $Notes
 
 func _ready() -> void:
 	$AudioStreamPlayer.stream = load(track)
-	$AudioStreamPlayer.play()
+	$AudioStreamPlayer.play(offset)
 
-func _process(delta: float) -> void:
-	notes.position.y += delta * 300
+func _process(_delta: float) -> void:
 	for i in inputs.size():
 		var input = inputs[i]
 		var key = keys.get_child(i)

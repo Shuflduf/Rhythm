@@ -8,5 +8,4 @@ func _ready() -> void:
 
 func add_points(more_points: float):
 	points += floori((1 / (abs(more_points) / 10)) * 100)
-	#print()
 	label.text = "Points: " + str(points)
