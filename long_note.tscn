@@ -12,8 +12,10 @@ script = ExtResource("1_i3yo4")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(0, 8)
 scale = Vector2(1, 0.125)
 texture = ExtResource("2_m4n0u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_jli0o")

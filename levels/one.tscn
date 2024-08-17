@@ -121,18 +121,21 @@ position = Vector2(192, -4864)
 [node name="Note43" parent="." index="37" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -4992)
 
-[node name="Note26" parent="." index="38" instance=ExtResource("2_4ykp8")]
+[node name="Note44" parent="." index="38" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -5632)
+
+[node name="Note26" parent="." index="39" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -2944)
 
-[node name="Note24" parent="." index="39" instance=ExtResource("2_4ykp8")]
+[node name="Note24" parent="." index="40" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -3072)
 
-[node name="Note27" parent="." index="40" instance=ExtResource("2_4ykp8")]
+[node name="Note27" parent="." index="41" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -3200)
 
-[node name="Note28" parent="." index="41" instance=ExtResource("2_4ykp8")]
+[node name="Note28" parent="." index="42" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -3200)
 
-[node name="Note25" parent="." index="42" instance=ExtResource("3_ygx55")]
-position = Vector2(-192, -5504)
+[node name="Note25" parent="." index="43" instance=ExtResource("3_ygx55")]
+position = Vector2(-192, -5632)
 scale = Vector2(1, 16)
