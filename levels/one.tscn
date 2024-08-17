@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxh5oyxy3rtla"]
+[gd_scene load_steps=4 format=3 uid="uid://dxh5oyxy3rtla"]
 
 [ext_resource type="PackedScene" uid="uid://cjjvdymx8en54" path="res://level_base.tscn" id="1_8snyl"]
 [ext_resource type="PackedScene" uid="uid://chshqlahe5ojg" path="res://note.tscn" id="2_4ykp8"]
+[ext_resource type="PackedScene" uid="uid://cfibirqsoqokw" path="res://long_note.tscn" id="3_ygx55"]
 
 [node name="Level" instance=ExtResource("1_8snyl")]
 position = Vector2(0, -256)
@@ -69,29 +70,69 @@ position = Vector2(-192, -2688)
 [node name="Note21" parent="." index="20" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -2816)
 
-[node name="Note25" parent="." index="21" instance=ExtResource("2_4ykp8")]
-position = Vector2(64, -2944)
-
-[node name="Note22" parent="." index="22" instance=ExtResource("2_4ykp8")]
+[node name="Note22" parent="." index="21" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -2816)
 
-[node name="Note23" parent="." index="23" instance=ExtResource("2_4ykp8")]
+[node name="Note23" parent="." index="22" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -3072)
 
-[node name="Note29" parent="." index="24" instance=ExtResource("2_4ykp8")]
+[node name="Note29" parent="." index="23" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -3456)
 
-[node name="Note30" parent="." index="25" instance=ExtResource("2_4ykp8")]
+[node name="Note30" parent="." index="24" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -3584)
 
-[node name="Note26" parent="." index="26" instance=ExtResource("2_4ykp8")]
+[node name="Note31" parent="." index="25" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -3712)
+
+[node name="Note32" parent="." index="26" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -3840)
+
+[node name="Note33" parent="." index="27" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -3904)
+
+[node name="Note34" parent="." index="28" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -4096)
+
+[node name="Note35" parent="." index="29" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -4224)
+
+[node name="Note36" parent="." index="30" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -4224)
+
+[node name="Note37" parent="." index="31" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -4352)
+
+[node name="Note38" parent="." index="32" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -4352)
+
+[node name="Note39" parent="." index="33" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -4480)
+
+[node name="Note40" parent="." index="34" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -4480)
+
+[node name="Note41" parent="." index="35" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -4736)
+
+[node name="Note42" parent="." index="36" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -4864)
+
+[node name="Note43" parent="." index="37" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -4992)
+
+[node name="Note26" parent="." index="38" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -2944)
 
-[node name="Note24" parent="." index="27" instance=ExtResource("2_4ykp8")]
+[node name="Note24" parent="." index="39" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -3072)
 
-[node name="Note27" parent="." index="28" instance=ExtResource("2_4ykp8")]
+[node name="Note27" parent="." index="40" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -3200)
 
-[node name="Note28" parent="." index="29" instance=ExtResource("2_4ykp8")]
+[node name="Note28" parent="." index="41" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -3200)
+
+[node name="Note25" parent="." index="42" instance=ExtResource("3_ygx55")]
+position = Vector2(-192, -5504)
+scale = Vector2(1, 16)

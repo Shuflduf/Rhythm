@@ -25,7 +25,10 @@ func _process(_delta: float) -> void:
 
 			if key.has_overlapping_areas():
 				var note = key.get_overlapping_areas()[0]
-				note.queue_free()
+				if note is Note:
+					note.queue_free()
+				if note is LongNote:
+					note.shrinking = true
 				noted.emit(key.global_position.y - note.global_position.y)
 
 

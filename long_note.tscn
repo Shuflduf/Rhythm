@@ -1,19 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://chshqlahe5ojg"]
+[gd_scene load_steps=4 format=3 uid="uid://cfibirqsoqokw"]
 
-[ext_resource type="Texture2D" uid="uid://d4lj86qbycg8a" path="res://icon.svg" id="1_0ngnx"]
-[ext_resource type="Script" path="res://note.gd" id="1_hvr54"]
+[ext_resource type="Script" path="res://long_note.gd" id="1_i3yo4"]
+[ext_resource type="Texture2D" uid="uid://d4lj86qbycg8a" path="res://icon.svg" id="2_m4n0u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jli0o"]
-size = Vector2(64, 20)
+size = Vector2(64, 16)
 
 [node name="Note" type="Area2D"]
 monitoring = false
-script = ExtResource("1_hvr54")
+script = ExtResource("1_i3yo4")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
 scale = Vector2(1, 0.125)
-texture = ExtResource("1_0ngnx")
+texture = ExtResource("2_m4n0u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_jli0o")
