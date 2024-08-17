@@ -1,5 +1,7 @@
 extends Node2D
 
+signal noted(points: float)
+
 @export_global_file var track: String
 
 
@@ -19,8 +21,12 @@ func _process(delta: float) -> void:
 
 		if Input.is_action_just_pressed(input):
 			key.modulate = Color.BLACK
+
 			if key.has_overlapping_areas():
-				key.get_overlapping_areas()[0].queue_free()
+				var note = key.get_overlapping_areas()[0]
+				note.queue_free()
+				noted.emit(key.global_position.y - note.global_position.y)
+
 
 		if Input.is_action_just_released(input):
 			key.modulate = Color.WHITE

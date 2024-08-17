@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://r4or01kogl6m"]
+[gd_scene load_steps=6 format=3 uid="uid://r4or01kogl6m"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_dpxu0"]
 [ext_resource type="Texture2D" uid="uid://d4lj86qbycg8a" path="res://icon.svg" id="2_6ywuj"]
 [ext_resource type="PackedScene" uid="uid://chshqlahe5ojg" path="res://note.tscn" id="3_flsnc"]
+[ext_resource type="PackedScene" uid="uid://467vlwqhwsxo" path="res://ui.tscn" id="4_gu027"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ybyr"]
 size = Vector2(48, 512)
@@ -85,3 +86,5 @@ position = Vector2(-64, -416)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("4_gu027")]
