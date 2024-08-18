@@ -14,6 +14,7 @@ size = Vector2(384, 20)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_dpxu0")
+main_menu = "res://main_menu.tscn"
 offset = 150.0
 track = "res://Köppen As Fuck - Chris Christodoulou.mp3"
 
@@ -81,4 +82,5 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EventDetection"]
 shape = SubResource("RectangleShape2D_hh4ii")
 
+[connection signal="game_started" from="UI" to="." method="_on_ui_game_started"]
 [connection signal="area_entered" from="EventDetection" to="." method="_on_event_detection_area_entered"]

@@ -8,6 +8,8 @@ var seconds_per_beat:
 
 var offset = 0.0
 
+var moving = false
+
 func _ready() -> void:
 
 	offset = get_parent().offset
@@ -15,4 +17,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position.y += delta * (1.0 / seconds_per_beat) * 200
+	if moving:
+		position.y += delta * (1.0 / seconds_per_beat) * 200

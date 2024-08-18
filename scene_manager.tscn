@@ -180,7 +180,7 @@ _data = {
 }
 
 [node name="SceneManager" type="CanvasLayer"]
-follow_viewport_enabled = true
+layer = 128
 script = ExtResource("1_dnrid")
 
 [node name="Overlay" type="ColorRect" parent="."]
