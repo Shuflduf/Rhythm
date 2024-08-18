@@ -44,9 +44,11 @@ func _process(_delta: float) -> void:
 
 
 func _on_event_detection_area_entered(_area: Area2D) -> void:
-	
-	FileAccess.open("user://score.txt", FileAccess.WRITE)\
-			.store_64($UI.points)
+	if FileAccess.file_exists("user://score.txt"):
+		var save = FileAccess.open("user://score.txt", FileAccess.READ)
+		if $UI.points > save.get_64():
+			FileAccess.open("user://score.txt", FileAccess.WRITE)\
+					.store_64($UI.points)
 	
 	var tween = get_tree().create_tween()\
 			.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_SINE)
