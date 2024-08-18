@@ -34,3 +34,10 @@ func _process(_delta: float) -> void:
 
 		if Input.is_action_just_released(input):
 			key.modulate = Color.WHITE
+
+
+func _on_event_detection_area_entered(area: Area2D) -> void:
+	var tween = get_tree().create_tween()\
+			.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_SINE)
+	tween.parallel().tween_property($AudioStreamPlayer, "volume_db", -80, 2)
+	tween.parallel().tween_property($AudioStreamPlayer, "pitch_scale", 0, 2)

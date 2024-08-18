@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dxh5oyxy3rtla"]
+[gd_scene load_steps=5 format=3 uid="uid://dxh5oyxy3rtla"]
 
 [ext_resource type="PackedScene" uid="uid://cjjvdymx8en54" path="res://level_base.tscn" id="1_8snyl"]
 [ext_resource type="PackedScene" uid="uid://chshqlahe5ojg" path="res://note.tscn" id="2_4ykp8"]
 [ext_resource type="PackedScene" uid="uid://cfibirqsoqokw" path="res://long_note.tscn" id="3_ygx55"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nn442"]
+size = Vector2(498, 20)
 
 [node name="Level" instance=ExtResource("1_8snyl")]
 position = Vector2(0, -256)
@@ -1816,222 +1819,337 @@ position = Vector2(-192, -70848)
 [node name="Note682" parent="." index="602" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -70848)
 
-[node name="Note669" parent="." index="603" instance=ExtResource("2_4ykp8")]
+[node name="Note683" parent="." index="603" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -70976)
+
+[node name="Note684" parent="." index="604" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -71040)
+
+[node name="Note687" parent="." index="605" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -71296)
+
+[node name="Note690" parent="." index="606" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -71296)
+
+[node name="Note688" parent="." index="607" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -71552)
+
+[node name="Note689" parent="." index="608" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -71616)
+
+[node name="Note691" parent="." index="609" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -71872)
+
+[node name="Note692" parent="." index="610" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -71936)
+
+[node name="Note693" parent="." index="611" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -72000)
+
+[node name="Note694" parent="." index="612" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -72128)
+
+[node name="Note695" parent="." index="613" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -72256)
+
+[node name="Note696" parent="." index="614" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -72448)
+
+[node name="Note697" parent="." index="615" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -72448)
+
+[node name="Note698" parent="." index="616" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -72640)
+
+[node name="Note700" parent="." index="617" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -72640)
+
+[node name="Note701" parent="." index="618" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -72640)
+
+[node name="Note699" parent="." index="619" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -73088)
+
+[node name="Note704" parent="." index="620" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -73408)
+
+[node name="Note705" parent="." index="621" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -73472)
+
+[node name="Note706" parent="." index="622" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -73600)
+
+[node name="Note707" parent="." index="623" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -73728)
+
+[node name="Note708" parent="." index="624" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -73792)
+
+[node name="Note709" parent="." index="625" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -73920)
+
+[node name="Note710" parent="." index="626" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -74048)
+
+[node name="Note711" parent="." index="627" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -74176)
+
+[node name="Note712" parent="." index="628" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -74304)
+
+[node name="Note713" parent="." index="629" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -74304)
+
+[node name="Note714" parent="." index="630" instance=ExtResource("2_4ykp8")]
+position = Vector2(64, -75008)
+
+[node name="Note716" parent="." index="631" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -75008)
+
+[node name="Note717" parent="." index="632" instance=ExtResource("2_4ykp8")]
+position = Vector2(-192, -75008)
+
+[node name="Note715" parent="." index="633" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -75008)
+
+[node name="Note702" parent="." index="634" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -73088)
+
+[node name="Note703" parent="." index="635" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -73088)
+
+[node name="Note685" parent="." index="636" instance=ExtResource("2_4ykp8")]
+position = Vector2(-64, -71104)
+
+[node name="Note686" parent="." index="637" instance=ExtResource("2_4ykp8")]
+position = Vector2(192, -71104)
+
+[node name="Note669" parent="." index="638" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -69376)
 
-[node name="Note670" parent="." index="604" instance=ExtResource("2_4ykp8")]
+[node name="Note670" parent="." index="639" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -69376)
 
-[node name="Note661" parent="." index="605" instance=ExtResource("2_4ykp8")]
+[node name="Note661" parent="." index="640" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -68480)
 
-[node name="Note660" parent="." index="606" instance=ExtResource("2_4ykp8")]
+[node name="Note660" parent="." index="641" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -68224)
 
-[node name="Note662" parent="." index="607" instance=ExtResource("2_4ykp8")]
+[node name="Note662" parent="." index="642" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -68224)
 
-[node name="Note649" parent="." index="608" instance=ExtResource("2_4ykp8")]
+[node name="Note649" parent="." index="643" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -66432)
 
-[node name="Note623" parent="." index="609" instance=ExtResource("2_4ykp8")]
+[node name="Note623" parent="." index="644" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -62848)
 
-[node name="Note615" parent="." index="610" instance=ExtResource("2_4ykp8")]
+[node name="Note615" parent="." index="645" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -62016)
 
-[node name="Note596" parent="." index="611" instance=ExtResource("2_4ykp8")]
+[node name="Note596" parent="." index="646" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -59776)
 
-[node name="Note597" parent="." index="612" instance=ExtResource("2_4ykp8")]
+[node name="Note597" parent="." index="647" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -59968)
 
-[node name="Note591" parent="." index="613" instance=ExtResource("2_4ykp8")]
+[node name="Note591" parent="." index="648" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -59328)
 
-[node name="Note592" parent="." index="614" instance=ExtResource("2_4ykp8")]
+[node name="Note592" parent="." index="649" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -59328)
 
-[node name="Note585" parent="." index="615" instance=ExtResource("2_4ykp8")]
+[node name="Note585" parent="." index="650" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -58688)
 
-[node name="Note586" parent="." index="616" instance=ExtResource("2_4ykp8")]
+[node name="Note586" parent="." index="651" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -58688)
 
-[node name="Note574" parent="." index="617" instance=ExtResource("2_4ykp8")]
+[node name="Note574" parent="." index="652" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -57472)
 
-[node name="Note575" parent="." index="618" instance=ExtResource("2_4ykp8")]
+[node name="Note575" parent="." index="653" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -57664)
 
-[node name="Note568" parent="." index="619" instance=ExtResource("2_4ykp8")]
+[node name="Note568" parent="." index="654" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -56832)
 
-[node name="Note569" parent="." index="620" instance=ExtResource("2_4ykp8")]
+[node name="Note569" parent="." index="655" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -56960)
 
-[node name="Note570" parent="." index="621" instance=ExtResource("2_4ykp8")]
+[node name="Note570" parent="." index="656" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -57216)
 
-[node name="Note571" parent="." index="622" instance=ExtResource("2_4ykp8")]
+[node name="Note571" parent="." index="657" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -57152)
 
-[node name="Note515" parent="." index="623" instance=ExtResource("2_4ykp8")]
+[node name="Note515" parent="." index="658" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -51392)
 
-[node name="Note512" parent="." index="624" instance=ExtResource("2_4ykp8")]
+[node name="Note512" parent="." index="659" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -51136)
 
-[node name="Note502" parent="." index="625" instance=ExtResource("2_4ykp8")]
+[node name="Note502" parent="." index="660" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -50112)
 
-[node name="Note499" parent="." index="626" instance=ExtResource("2_4ykp8")]
+[node name="Note499" parent="." index="661" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -49856)
 
-[node name="Note483" parent="." index="627" instance=ExtResource("2_4ykp8")]
+[node name="Note483" parent="." index="662" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -48384)
 
-[node name="Note467" parent="." index="628" instance=ExtResource("2_4ykp8")]
+[node name="Note467" parent="." index="663" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -46720)
 
-[node name="Note464" parent="." index="629" instance=ExtResource("2_4ykp8")]
+[node name="Note464" parent="." index="664" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -46592)
 
-[node name="Note465" parent="." index="630" instance=ExtResource("2_4ykp8")]
+[node name="Note465" parent="." index="665" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -46592)
 
-[node name="Note452" parent="." index="631" instance=ExtResource("2_4ykp8")]
+[node name="Note452" parent="." index="666" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -45248)
 
-[node name="Note450" parent="." index="632" instance=ExtResource("2_4ykp8")]
+[node name="Note450" parent="." index="667" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -45120)
 
-[node name="Note424" parent="." index="633" instance=ExtResource("2_4ykp8")]
+[node name="Note424" parent="." index="668" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -42624)
 
-[node name="Note413" parent="." index="634" instance=ExtResource("2_4ykp8")]
+[node name="Note413" parent="." index="669" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -41344)
 
-[node name="Note378" parent="." index="635" instance=ExtResource("2_4ykp8")]
+[node name="Note378" parent="." index="670" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -37120)
 
-[node name="Note379" parent="." index="636" instance=ExtResource("2_4ykp8")]
+[node name="Note379" parent="." index="671" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -37120)
 
-[node name="Note380" parent="." index="637" instance=ExtResource("2_4ykp8")]
+[node name="Note380" parent="." index="672" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -37120)
 
-[node name="Note368" parent="." index="638" instance=ExtResource("2_4ykp8")]
+[node name="Note368" parent="." index="673" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -35904)
 
-[node name="Note350" parent="." index="639" instance=ExtResource("2_4ykp8")]
+[node name="Note350" parent="." index="674" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -34368)
 
-[node name="Note346" parent="." index="640" instance=ExtResource("2_4ykp8")]
+[node name="Note346" parent="." index="675" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -34048)
 
-[node name="Note334" parent="." index="641" instance=ExtResource("2_4ykp8")]
+[node name="Note334" parent="." index="676" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -33024)
 
-[node name="Note318" parent="." index="642" instance=ExtResource("2_4ykp8")]
+[node name="Note318" parent="." index="677" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -30976)
 
-[node name="Note292" parent="." index="643" instance=ExtResource("2_4ykp8")]
+[node name="Note292" parent="." index="678" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -28608)
 
-[node name="Note288" parent="." index="644" instance=ExtResource("2_4ykp8")]
+[node name="Note288" parent="." index="679" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -28352)
 
-[node name="Note282" parent="." index="645" instance=ExtResource("2_4ykp8")]
+[node name="Note282" parent="." index="680" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -27904)
 
-[node name="Note283" parent="." index="646" instance=ExtResource("2_4ykp8")]
+[node name="Note283" parent="." index="681" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -27904)
 
-[node name="Note257" parent="." index="647" instance=ExtResource("2_4ykp8")]
+[node name="Note257" parent="." index="682" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -25216)
 
-[node name="Note251" parent="." index="648" instance=ExtResource("2_4ykp8")]
+[node name="Note251" parent="." index="683" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -24832)
 
-[node name="Note245" parent="." index="649" instance=ExtResource("2_4ykp8")]
+[node name="Note245" parent="." index="684" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -24320)
 
-[node name="Note241" parent="." index="650" instance=ExtResource("2_4ykp8")]
+[node name="Note241" parent="." index="685" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -23936)
 
-[node name="Note239" parent="." index="651" instance=ExtResource("2_4ykp8")]
+[node name="Note239" parent="." index="686" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -23808)
 
-[node name="Note212" parent="." index="652" instance=ExtResource("2_4ykp8")]
+[node name="Note212" parent="." index="687" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -21120)
 
-[node name="Note204" parent="." index="653" instance=ExtResource("2_4ykp8")]
+[node name="Note204" parent="." index="688" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -20224)
 
-[node name="Note190" parent="." index="654" instance=ExtResource("2_4ykp8")]
+[node name="Note190" parent="." index="689" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -18432)
 
-[node name="Note191" parent="." index="655" instance=ExtResource("2_4ykp8")]
+[node name="Note191" parent="." index="690" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -18432)
 
-[node name="Note185" parent="." index="656" instance=ExtResource("2_4ykp8")]
+[node name="Note185" parent="." index="691" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -17920)
 
-[node name="Note179" parent="." index="657" instance=ExtResource("2_4ykp8")]
+[node name="Note179" parent="." index="692" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -17472)
 
-[node name="Note162" parent="." index="658" instance=ExtResource("2_4ykp8")]
+[node name="Note162" parent="." index="693" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -15808)
 
-[node name="Note139" parent="." index="659" instance=ExtResource("2_4ykp8")]
+[node name="Note139" parent="." index="694" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -13888)
 
-[node name="Note140" parent="." index="660" instance=ExtResource("2_4ykp8")]
+[node name="Note140" parent="." index="695" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -13888)
 
-[node name="Note134" parent="." index="661" instance=ExtResource("2_4ykp8")]
+[node name="Note134" parent="." index="696" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -13568)
 
-[node name="Note113" parent="." index="662" instance=ExtResource("2_4ykp8")]
+[node name="Note113" parent="." index="697" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -11264)
 
-[node name="Note91" parent="." index="663" instance=ExtResource("2_4ykp8")]
+[node name="Note91" parent="." index="698" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -9216)
 
-[node name="Note92" parent="." index="664" instance=ExtResource("2_4ykp8")]
+[node name="Note92" parent="." index="699" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -9216)
 
-[node name="Note89" parent="." index="665" instance=ExtResource("2_4ykp8")]
+[node name="Note89" parent="." index="700" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -9024)
 
-[node name="Note90" parent="." index="666" instance=ExtResource("2_4ykp8")]
+[node name="Note90" parent="." index="701" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -9024)
 
-[node name="Note66" parent="." index="667" instance=ExtResource("2_4ykp8")]
+[node name="Note66" parent="." index="702" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -6848)
 
-[node name="Note53" parent="." index="668" instance=ExtResource("2_4ykp8")]
+[node name="Note53" parent="." index="703" instance=ExtResource("2_4ykp8")]
 position = Vector2(64, -6272)
 
-[node name="Note48" parent="." index="669" instance=ExtResource("2_4ykp8")]
+[node name="Note48" parent="." index="704" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -5888)
 
-[node name="Note47" parent="." index="670" instance=ExtResource("2_4ykp8")]
+[node name="Note47" parent="." index="705" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -5888)
 
-[node name="Note26" parent="." index="671" instance=ExtResource("2_4ykp8")]
+[node name="Note26" parent="." index="706" instance=ExtResource("2_4ykp8")]
 position = Vector2(-64, -2944)
 
-[node name="Note24" parent="." index="672" instance=ExtResource("2_4ykp8")]
+[node name="Note24" parent="." index="707" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -3072)
 
-[node name="Note27" parent="." index="673" instance=ExtResource("2_4ykp8")]
+[node name="Note27" parent="." index="708" instance=ExtResource("2_4ykp8")]
 position = Vector2(192, -3200)
 
-[node name="Note28" parent="." index="674" instance=ExtResource("2_4ykp8")]
+[node name="Note28" parent="." index="709" instance=ExtResource("2_4ykp8")]
 position = Vector2(-192, -3200)
 
-[node name="Note25" parent="." index="675" instance=ExtResource("3_ygx55")]
+[node name="Note25" parent="." index="710" instance=ExtResource("3_ygx55")]
 position = Vector2(-192, -5504)
 scale = Vector2(1, 8)
+
+[node name="Finish" type="Area2D" parent="." index="711"]
+position = Vector2(0, -76115)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" index="0"]
+shape = SubResource("RectangleShape2D_nn442")
