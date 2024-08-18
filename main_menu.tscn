@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b08g0b25c258m"]
+[gd_scene load_steps=3 format=3 uid="uid://b08g0b25c258m"]
 
 [ext_resource type="Texture2D" uid="uid://6nj0653ch6n6" path="res://assets/scene.png" id="1_0fw73"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_8p2ml"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -9,6 +10,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8p2ml")
+main_game_scene = "res://node_2d.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(0.306923, 0.306923, 0.306923, 1)
@@ -46,3 +49,5 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 21
 text = "Best: 12095743"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

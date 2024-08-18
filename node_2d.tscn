@@ -65,12 +65,12 @@ shape = SubResource("RectangleShape2D_4ybyr")
 [node name="Sprite2D" type="Sprite2D" parent="Keys/Area2D4"]
 texture = ExtResource("2_6ywuj")
 
-[node name="CanvasLayer" parent="." instance=ExtResource("4_gu027")]
+[node name="UI" parent="." instance=ExtResource("4_gu027")]
 
 [node name="Level" parent="." instance=ExtResource("4_8mu0h")]
 bpm = 140.0
 
-[node name="CanvasLayer2" parent="." instance=ExtResource("5_f1wh2")]
+[node name="Backround" parent="." instance=ExtResource("5_f1wh2")]
 
 [node name="EventDetection" type="Area2D" parent="."]
 position = Vector2(0, 384)

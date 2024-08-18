@@ -1,6 +1,66 @@
-[gd_scene load_steps=2 format=3 uid="uid://467vlwqhwsxo"]
+[gd_scene load_steps=5 format=3 uid="uid://467vlwqhwsxo"]
 
 [ext_resource type="Script" path="res://ui.gd" id="1_gmvc6"]
+
+[sub_resource type="Animation" id="Animation_04ud7"]
+resource_name = "countdown"
+length = 1.2
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/MarginContainer/Countdown:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["3", "2", "1", "Go!"]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/MarginContainer/Countdown:theme_override_font_sizes/font_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(166, -0.25, 0, 0.25, 0, 250, -0.25, 0, 0.25, 0, 166, -0.25, 0, 0.25, 0, 250, -0.25, 0, 0.25, 0, 166, -0.25, 0, 0.25, 0, 250, -0.25, 0, 0.25, 0, 166, -0.25, 0, 0.25, 0, 250, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.29, 0.3, 0.59, 0.6, 0.89, 0.9, 1.2)
+}
+
+[sub_resource type="Animation" id="Animation_fiuw3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/MarginContainer/Countdown:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["3"]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/MarginContainer/Countdown:theme_override_font_sizes/font_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(166, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h71rh"]
+_data = {
+"RESET": SubResource("Animation_fiuw3"),
+"countdown": SubResource("Animation_04ud7")
+}
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_gmvc6")
@@ -31,3 +91,17 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 36
 text = "Points: 0"
+
+[node name="Countdown" type="Label" parent="Control/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 65
+theme_override_font_sizes/font_size = 166
+text = "3"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_h71rh")
+}
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
