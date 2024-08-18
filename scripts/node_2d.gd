@@ -5,15 +5,12 @@ signal noted(points: float)
 @export_file("*.tscn") var main_menu: String
 
 @export var offset = 0.0
-@export_global_file var track: String
 
 
 var inputs = ["one", "two", "three", "four"]
 @onready var keys: Node2D = $Keys
 #@onready var notes: Node2D = $Notes
 
-func _ready() -> void:
-	$AudioStreamPlayer.stream = load(track)
 	
 func start():
 	$Level.moving = true
@@ -39,7 +36,6 @@ func _process(_delta: float) -> void:
 
 
 		if Input.is_action_just_released(input):
-			#key_sprite.modulate = Color.WHITE
 			key_sprite.material.set_shader_parameter("new_colour", Color.WHITE)
 
 

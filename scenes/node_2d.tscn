@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://r4or01kogl6m"]
+[gd_scene load_steps=14 format=3 uid="uid://r4or01kogl6m"]
 
 [ext_resource type="Script" path="res://scripts/node_2d.gd" id="1_0k4b0"]
 [ext_resource type="Shader" path="res://scripts/full_white.gdshader" id="2_5c28m"]
+[ext_resource type="AudioStream" uid="uid://b81uraoqivvuf" path="res://assets/Köppen As Fuck - Chris Christodoulou.mp3" id="2_vro6j"]
 [ext_resource type="Texture2D" uid="uid://d4lj86qbycg8a" path="res://icon.svg" id="3_qtlpu"]
 [ext_resource type="PackedScene" uid="uid://467vlwqhwsxo" path="res://scenes/ui.tscn" id="4_j1q6k"]
 [ext_resource type="PackedScene" uid="uid://dxh5oyxy3rtla" path="res://levels/one.tscn" id="5_rhgvw"]
@@ -36,9 +37,9 @@ size = Vector2(384, 20)
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0k4b0")
 main_menu = "res://scenes/main_menu.tscn"
-track = "/home/shuflduf/Documents/Godot/Rhythm/assets/Köppen As Fuck - Chris Christodoulou.mp3"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_vro6j")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
