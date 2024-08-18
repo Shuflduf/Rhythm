@@ -23,9 +23,11 @@ func _process(_delta: float) -> void:
 	for i in inputs.size():
 		var input = inputs[i]
 		var key = keys.get_child(i)
+		var key_sprite = key.get_child(1)
 
 		if Input.is_action_just_pressed(input):
-			key.modulate = Color.BLACK
+			#key_sprite.modulate = Color.BLACK
+			key_sprite.material.set_shader_parameter("new_colour", Color.BLACK)
 
 			if key.has_overlapping_areas():
 				var note = key.get_overlapping_areas()[0]
@@ -37,7 +39,8 @@ func _process(_delta: float) -> void:
 
 
 		if Input.is_action_just_released(input):
-			key.modulate = Color.WHITE
+			#key_sprite.modulate = Color.WHITE
+			key_sprite.material.set_shader_parameter("new_colour", Color.WHITE)
 
 
 func _on_event_detection_area_entered(_area: Area2D) -> void:
