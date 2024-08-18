@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://chshqlahe5ojg"]
 
 [ext_resource type="Texture2D" uid="uid://d4lj86qbycg8a" path="res://icon.svg" id="1_0ngnx"]
-[ext_resource type="Script" path="res://note.gd" id="1_hvr54"]
-[ext_resource type="Shader" path="res://full_white.gdshader" id="2_eyp62"]
+[ext_resource type="Script" path="res://scripts/note.gd" id="1_hvr54"]
+[ext_resource type="Shader" path="res://scripts/full_white.gdshader" id="2_eyp62"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1esh1"]
 resource_local_to_scene = true

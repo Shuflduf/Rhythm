@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://c044kghj0y7u0"]
 
-[ext_resource type="Shader" path="res://diamond_sweep.gdshader" id="1_a6aj7"]
-[ext_resource type="Script" path="res://scene_manager.gd" id="1_dnrid"]
+[ext_resource type="Script" path="res://scripts/scene_manager.gd" id="1_4dtrm"]
+[ext_resource type="Shader" path="res://scripts/diamond_sweep.gdshader" id="2_oe642"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ugclb"]
-shader = ExtResource("1_a6aj7")
+shader = ExtResource("2_oe642")
 shader_parameter/progress = 0.0
 shader_parameter/size = 40.0
 shader_parameter/fill = true
@@ -181,7 +181,7 @@ _data = {
 
 [node name="SceneManager" type="CanvasLayer"]
 layer = 128
-script = ExtResource("1_dnrid")
+script = ExtResource("1_4dtrm")
 
 [node name="Overlay" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_ugclb")

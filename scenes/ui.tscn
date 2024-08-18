@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://467vlwqhwsxo"]
 
-[ext_resource type="Script" path="res://ui.gd" id="1_gmvc6"]
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_gmvc6"]
 
 [sub_resource type="Animation" id="Animation_fiuw3"]
 length = 0.001

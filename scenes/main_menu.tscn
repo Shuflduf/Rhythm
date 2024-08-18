@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b08g0b25c258m"]
 
-[ext_resource type="Texture2D" uid="uid://6nj0653ch6n6" path="res://assets/scene.png" id="1_0fw73"]
-[ext_resource type="Script" path="res://main_menu.gd" id="1_8p2ml"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_p2i3v"]
+[ext_resource type="Texture2D" uid="uid://6nj0653ch6n6" path="res://assets/scene.png" id="2_ryrab"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,8 +10,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_8p2ml")
-main_game_scene = "res://node_2d.tscn"
+script = ExtResource("1_p2i3v")
+main_game_scene = "res://scenes/node_2d.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(0.5, 0.5, 0.5, 1)
@@ -22,7 +22,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_0fw73")
+texture = ExtResource("2_ryrab")
 stretch_mode = 6
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
